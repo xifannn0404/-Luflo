@@ -13,9 +13,9 @@
       --bg:#f9faf7;
       --fg:#37371f;
       --muted:#80806b;
-      --brand:#c7bf7c;      /* 清透綠藍，像柔光 */
+      --brand:#c7bf7c;      
       --brand-dark:#CF8934;
-      --accent:#987b49;     /* 溫暖金光 */
+      --accent:#987b49;     
       --card:#ffffff;
       --shadow:0 8px 24px rgba(0,0,0,.08);
       --radius:14px;
@@ -25,7 +25,7 @@
     html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font-family:"Noto Sans TC",system-ui,-apple-system,Segoe UI,Arial,sans-serif}
     a{color:var(--brand-dark);text-decoration:none}
     img{max-width:100%;display:block}
-    /* Header */
+    
     .nav{
       position:sticky;top:0;z-index:50;background:#ffffffbf;
       backdrop-filter:saturate(180%) blur(10px);border-bottom:1px solid #e5e7eb;
@@ -68,7 +68,7 @@
     }
     .card h3{margin:0 0 8px;font-size:20px}
     .card p{margin:0;color:var(--muted)}
-    /* List tags */
+    /* tags */
     .tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
     .tag{font-size:12px;background:#eef6f6;color:#cf8934;padding:6px 10px;border-radius:999px;border:1px solid #d1e7e6}
     /* Gallery */
@@ -104,7 +104,7 @@
 <header class="nav">
   <div class="nav-inner">
     <div class="brand">
-      <!-- 改成 logo -->
+      <!-- logo -->
       <img src="logo.png" style="height:40px;margin-right:10px;">
       <span>光浮之苑｜Luflo</span>
     </div>
@@ -124,7 +124,7 @@
     <div class="hero-inner">
       <div>
         <h1>光浮之苑</h1>
-        <p>在高速流動的城市裡，時間成為稀缺資源，人們被迫以「效率」為基準去生活。地鐵的速度、螢幕的閃爍、工作與日程的堆疊，逐漸壓縮了人們的感官與思緒。在這樣的狀態下，情緒難以被安放，靈魂失去了棲息的角落。 
+        <p>在高速流動的城市裡，時間成為稀缺資源，人們被迫以「效率」為基準去生活。高鐵的速度、螢幕的閃爍、工作與日程的堆疊，逐漸壓縮了人們的感官與思緒。在這樣的狀態下，情緒難以被安放，靈魂失去了棲息的角落。 
 「光浮之苑 Luflo」正是我們對這種失衡的回應。</p>
         <div class="hero-cta">
           <a class="btn primary" href="#contact">預約參訪</a>
@@ -200,14 +200,14 @@
     background: #555;
   }
 
-  /* Hero 圖片 */
+  /* Hero pic */
   .hero-img img {
     width: 100%;
     border-radius: 12px;
     box-shadow: 0 12px 30px rgba(0,0,0,0.15);
   }
 
-  /* 漂浮淡入效果 */
+  /* 效果 */
   .float-in {
     opacity: 0;
     transform: translateY(20px);
@@ -218,7 +218,7 @@
     transform: translateY(0);
   }
 
-  /* 持續漂浮效果 */
+  /* 持續效果 */
   .float-loop {
     animation: floatY 6s ease-in-out infinite;
   }
@@ -230,7 +230,7 @@
 </style>
 
 <script>
-  // IntersectionObserver：滾動進場效果
+  // 滾動進場效果
   const io = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -414,6 +414,7 @@
 </body>
 
 </html>
+
 
 
 
